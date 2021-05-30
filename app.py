@@ -11,7 +11,7 @@ def clean_data(local_players):
         else:
             experience = False
 
-            guardians = player['guardians'].split(" and ")
+        guardians = player['guardians'].split(" and ")
 
         height = player['height'][:2]
 
