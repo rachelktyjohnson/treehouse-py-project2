@@ -11,11 +11,13 @@ def clean_data(local_players):
         else:
             experience = False
 
+            guardians = player['guardians'].split(" and ")
+
         height = player['height'][:2]
 
         clean_players.append({
             'name': player['name'],
-            'guardians': player['guardians'],
+            'guardians': guardians,
             'experience': experience,
             'height': height
         })
